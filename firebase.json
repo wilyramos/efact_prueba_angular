@@ -1,16 +1,8 @@
 {
   "hosting": {
-    "public": "dist/efact",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
+    "source": "./",
+    "frameworks": {
+      "angular": {}
+    }
   }
 }
