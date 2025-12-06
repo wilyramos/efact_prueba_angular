@@ -1,13 +1,15 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../../../environments/environment';
+
 
 @Injectable({ providedIn: 'root' })
 export class DocumentService {
   private http = inject(HttpClient);
 
   // Apuntamos a tu servidor Express local
-  private baseUrl = 'http://localhost:3000/document';
+  private baseUrl = `${environment.apiUrl}/document`;
 
   /**
    * Método genérico para descargar documentos

@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:3000' // backend provisional
+  apiUrl: 'https://efact-prueba-tecnica-express.onrender.com' // backend provisional
 };
